@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/createProduct.css" />
+    <title>Shopping Cart | Edit Profile Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="brand"> Shopping Cart </a>
+            <nav>
+              <ul id="links">
+                  <li><a href="login.html"> Sign In </a></li>
+                  <li><a href="register.html"> Sign Up </a></li>
+              </ul>
+              <ul id="user-info">
+                  <li><a href="profile.html" id="user"></a></li>
+                  <li><a href="favoriteProduct.html">Favorite</a></li>
+                  <li><a href="myProdcucs.html">My Products</a></li>
+                  <li class="shoppingCart">
+                      <i class="fa-solid fa-cart-arrow-down"></i> 
+                      <span class="badge"></span>
+                      <div class="carts-products">
+                          <div></div>
+                          <a href="cartproducts.html">View all products</a>
+                      </div>
+                  </li>      
+                  <li><a href="#" id="logout">Logout</a></li> 
+              </ul>
+              </nav>
+        </div>
+      </div>
+    </header>
+    <section class="edit-profile-page">
+      <div class="container">
+        <form id="edit-profile-form">
+            <input id="changeImg" type="file">
+            <input id="changeName" type="text">
+            <input id="changeEmail" type="email">
+            <input type="submit" value="Edit Profile">
+        </form>
+      </div>
+    <a class="creat-product-icon" href="createProduct.html"><i class="fa fa-plus"></i></a>
+    </section>
+    <script src="js/user.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/checkData.js"></script>
+    <script src="js/editProfile.js"></script>
+  </body>
+</html>
